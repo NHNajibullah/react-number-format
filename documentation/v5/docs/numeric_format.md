@@ -155,6 +155,34 @@ import { NumericFormat } from 'react-number-format';
    ></iframe>
 </details>
 
+### fixedDecimalScale `boolean`
+
+**default**:`false`
+
+Whether to always display the decimal part with a fixed number of digits based on `decimalScale`. 
+
+If `true`, the `decimalScale` prop will be enforced, and trailing zeros will be added if necessary. 
+
+If `false`, the number of decimal places will be determined by the input value.
+
+```js
+import { NumericFormat } from 'react-number-format';
+
+<NumericFormat value={1234} decimalScale={3} fixedDecimalScale />;
+```
+
+<details>
+  <summary>
+  Demo
+  </summary>
+  <iframe src="https://codesandbox.io/embed/fixeddecimalscale-demo-5h529r?fontsize=14&hidenavigation=1&theme=dark"
+     className="csb"
+     title="fixedDecimalScale demo"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+</details>
+
 ### prefix `string`
 
 **default**:`undefined`
